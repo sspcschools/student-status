@@ -4,21 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Status</title>
-  <style>
-    /* Add your CSS styling here */
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Student: Max Weller</h1>
-  <p>Status: <span id="status">Not updated</span></p>
-  <button onclick="updateStatus()">Update Status</button>
+  <div class="container">
+    <h1 id="studentName"></h1>
+    <p>Status: <span id="status">Not updated</span></p>
+    <button onclick="updateStatus()">Update Status</button>
+  </div>
 
-  <script>
-    function updateStatus() {
-      // Implement logic to update the status here
-      // You can use AJAX or WebSockets to send a request to the server and update the status in real-time
-      document.getElementById('status').innerText = 'Updated status for Max Weller';
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
