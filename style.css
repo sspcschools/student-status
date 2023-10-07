@@ -1,26 +1,31 @@
 body {
-  background-color: #fffae5; /* Pale yellow background */
+  background-color: #fffae5;
   font-family: Arial, sans-serif;
 }
 
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
 h1 {
-  color: #ff6600; /* Dark orange color for the student's name */
+  color: #ff6600;
 }
 
 button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #ffcc00; /* Yellow button */
-  color: #000; /* Black text color */
+  background-color: #ffcc00;
+  color: #000;
   border: none;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #ffd700; /* Lighter yellow on hover */
+  background-color: #ffd700;
 }
 
 p {
   font-size: 18px;
-  color: #333; /* Dark gray color for the status text */
+  color: #333;
 }
