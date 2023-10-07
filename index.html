@@ -8,7 +8,16 @@
 </head>
 <body>
   <div class="container">
-    <h1 id="studentName"></h1>
+    <h1>Teacher Controls</h1>
+    <label for="studentSelect">Select Student:</label>
+    <select id="studentSelect" onchange="showStudentInfo()">
+      <option value="0">Max Weller</option>
+      <option value="1">Charlotte Collier</option>
+      <option value="2">Mason Collier</option>
+    </select>
+    <br><br>
+
+    <h2 id="studentName">Student: Max Weller</h2>
     <p>Status: <span id="status">Not updated</span></p>
     <button onclick="updateStatus('BIF')">BIF</button>
     <button onclick="updateStatus('Bathroom')">Student used bathroom</button>
