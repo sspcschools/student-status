@@ -1,7 +1,7 @@
 const students = [
-  { name: "Max Weller", status: "Not updated", periods: {} },
-  // Add more students here
-  // { name: "Student Name", status: "Not updated", periods: {} }
+  { name: "Max Weller", status: "Not updated", periods: {}, userId: "5928000256" },
+  { name: "Charlotte Collier", status: "Not updated", periods: {}, userId: "5928000268" },
+  { name: "Mason Collier", status: "Not updated", periods: {}, userId: "5928000267" }
 ];
 
 let currentStudentIndex = 0;
@@ -36,9 +36,10 @@ function closePopup() {
   document.getElementById('popup').style.display = 'none';
 }
 
-function showStudentInfo(index) {
-  currentStudentIndex = index;
-  const student = students[index];
-  document.getElementById('studentName').innerText = student.name;
+function showStudentInfo() {
+  const studentSelect = document.getElementById('studentSelect');
+  currentStudentIndex = parseInt(studentSelect.value);
+  const student = students[currentStudentIndex];
+  document.getElementById('studentName').innerText = `Student: ${student.name}`;
   document.getElementById('status').innerText = student.status;
 }
