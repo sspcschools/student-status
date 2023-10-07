@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Teacher Controls</h1>
+    <label for="userId">Enter Teacher User ID:</label>
+    <input type="text" id="userId" placeholder="Enter User ID" required>
+    <button onclick="showStudentInfo()">Submit</button>
+  </div>
+
+  <div id="studentInfo" class="container" style="display: none;">
+    <h1 id="studentName"></h1>
+    <p>Status: <span id="status">Not updated</span></p>
+    <button onclick="updateStatus('BIF')">BIF</button>
+    <button onclick="updateStatus('Restroom')">Student used restroom</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
