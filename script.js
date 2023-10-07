@@ -1,8 +1,17 @@
+const students = [
+  { name: "Max Weller", status: "Not updated" },
+  // Add more students here
+  // { name: "Student Name", status: "Not updated" }
+];
+
+let currentStudentIndex = 0;
+
 function updateStatus() {
-  // Simulate sending a request to the server to update the status
-  // You would replace this with actual server communication logic using AJAX or WebSockets
-  const newStatus = 'Updated status for Max Weller';
-  
-  // Update the status element with the new status
+  const student = students[currentStudentIndex];
+  const newStatus = `Updated status for ${student.name}`;
   document.getElementById('status').innerText = newStatus;
+
+  // Move to the next student for the next button click
+  currentStudentIndex = (currentStudentIndex + 1) % students.length;
+  document.getElementById('studentName').innerText = students[currentStudentIndex].name;
 }
