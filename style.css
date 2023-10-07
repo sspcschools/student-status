@@ -1,0 +1,26 @@
+body {
+  background-color: #fffae5; /* Pale yellow background */
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #ff6600; /* Dark orange color for the student's name */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffcc00; /* Yellow button */
+  color: #000; /* Black text color */
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffd700; /* Lighter yellow on hover */
+}
+
+p {
+  font-size: 18px;
+  color: #333; /* Dark gray color for the status text */
+}
