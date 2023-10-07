@@ -10,7 +10,23 @@
   <div class="container">
     <h1 id="studentName"></h1>
     <p>Status: <span id="status">Not updated</span></p>
-    <button onclick="updateStatus()">Update Status</button>
+    <button onclick="updateStatus('BIF')">BIF</button>
+    <button onclick="updateStatus('Bathroom')">Student used bathroom</button>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>Select Period</h2>
+      <label for="period">Select the period:</label>
+      <select id="period">
+        <option value="1">Period 1</option>
+        <option value="2">Period 2</option>
+        <option value="3">Period 3</option>
+        <!-- Add more periods as needed -->
+      </select>
+      <button onclick="updateBathroomStatus()">Submit</button>
+    </div>
   </div>
 
   <script src="script.js"></script>
