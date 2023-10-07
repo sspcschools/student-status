@@ -5,7 +5,9 @@ const students = {
 };
 
 function showStudentInfo() {
+  console.log('Submit button clicked!'); // Log a message to check if the function is called
   const userId = document.getElementById('userId').value;
+  console.log('User ID:', userId); // Log the user ID to check if it's retrieved correctly
   const student = students[userId];
 
   if (student) {
